@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="720" prefWidth="1280" style="-fx-background-image: url('file:C:/Users/Gosia/IdeaProjects/NewSemester/BlackJack/src/client/view/images/blackJackBackground.png');" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.view.FirstView.FirstViewController">
+   <children>
+      <Label fx:id="statusLabel" alignment="CENTER" layoutX="140.0" layoutY="273.0" prefHeight="88.0" prefWidth="993.0" stylesheets="@../images/styles.css" text="updateLabel" textAlignment="CENTER">
+         <textFill>
+            <LinearGradient endX="0.6068702581274601" endY="0.6793893207120532" startX="0.02290075971880032">
+               <stops>
+                  <Stop color="#fae596" />
+                  <Stop color="#ae8b45" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Rage Italic" size="35.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="506.0" layoutY="162.0" prefHeight="49.0" prefWidth="290.0" stylesheets="@../images/styles.css" text="Dealer" textAlignment="CENTER">
+         <textFill>
+            <LinearGradient endX="0.6068702581274601" endY="0.6793893207120532" startX="0.02290075971880032">
+               <stops>
+                  <Stop color="#fae596" />
+                  <Stop color="#ae8b45" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Rage Italic" size="54.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="112.0" layoutY="379.0" prefHeight="49.0" prefWidth="290.0" stylesheets="@../images/styles.css" text="You" textAlignment="CENTER">
+         <textFill>
+            <LinearGradient endX="0.6068702581274601" endY="0.6793893207120532" startX="0.02290075971880032">
+               <stops>
+                  <Stop color="#fae596" />
+                  <Stop color="#ae8b45" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Rage Italic" size="54.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="782.0" layoutY="379.0" prefHeight="94.0" prefWidth="431.0" stylesheets="@../images/styles.css" text="Second Player" textAlignment="CENTER">
+         <textFill>
+            <LinearGradient endX="0.6068702581274601" endY="0.6793893207120532" startX="0.02290075971880032">
+               <stops>
+                  <Stop color="#fae596" />
+                  <Stop color="#ae8b45" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Rage Italic" size="54.0" />
+         </font>
+      </Label>
+      <Button fx:id="getTheCards" layoutX="518.0" layoutY="373.0" mnemonicParsing="false" onAction="#handleClickMe" prefHeight="72.0" prefWidth="244.0" style="-fx-background-color: transparent; -fx-font-family: &quot;parisienne&quot;; -fx-font-size: 35px;" text="Get The Card">
+         <font>
+            <Font size="33.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5355555640326606" centerY="0.5534350999439035" radius="0.5">
+               <stops>
+                  <Stop color="#ae8b45" />
+                  <Stop color="#ae8b45" offset="0.3312977099236641" />
+                  <Stop color="#fae596" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill></Button>
+      <Button fx:id="getTheCards2" layoutX="477.0" layoutY="373.0" mnemonicParsing="false" onAction="#handleClickMe" prefHeight="84.0" prefWidth="325.0" style="-fx-background-color: transparent; -fx-font-family: &quot;parisienne&quot;; -fx-font-size: 35px;" text="Get Another Card">
+         <font>
+            <Font size="33.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5355555640326606" centerY="0.5534350999439035" radius="0.5">
+               <stops>
+                  <Stop color="#ae8b45" />
+                  <Stop color="#ae8b45" offset="0.3312977099236641" />
+                  <Stop color="#fae596" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill></Button>
+      <Button fx:id="getTheFinalScorebtn" layoutX="501.0" layoutY="373.0" mnemonicParsing="false" onAction="#handleClickMe" prefHeight="72.0" prefWidth="271.0" style="-fx-background-color: transparent; -fx-font-family: &quot;parisienne&quot;; -fx-font-size: 35px;" text="Get The Score">
+         <font>
+            <Font size="33.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5355555640326606" centerY="0.5534350999439035" radius="0.5">
+               <stops>
+                  <Stop color="#ae8b45" />
+                  <Stop color="#ae8b45" offset="0.3312977099236641" />
+                  <Stop color="#fae596" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <ImageView fx:id="firstPlayerCardImage" fitHeight="121.0" fitWidth="85.0" layoutX="128.0" layoutY="499.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow />
+         </effect></ImageView>
+      <ImageView fx:id="firstPlayerSecondCardImage" fitHeight="121.0" fitWidth="85.0" layoutX="269.0" layoutY="499.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="SecondPlayerCardImage" fitHeight="121.0" fitWidth="85.0" layoutX="891.0" layoutY="499.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="SecondPlayerSecondCardImage" fitHeight="121.0" fitWidth="85.0" layoutX="1032.0" layoutY="499.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="DealerFirstCardImage" fitHeight="121.0" fitWidth="85.0" layoutX="545.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="DealerSecondCardImage" fitHeight="121.0" fitWidth="85.0" layoutX="686.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" />
+
+   </children>
+</AnchorPane>

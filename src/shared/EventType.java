@@ -1,0 +1,12 @@
+package shared;
+
+public enum EventType {
+  CARD_TO_DEALER,
+  CARD_TO_PLAYER,
+  STATUS_LABEL,
+  CARD_TO_SECOND_PLAYER,
+  CARD_TO_DEALER_2,
+  CARD_TO_PLAYER_2,
+  CARD_TO_SECOND_PLAYER_2,
+  GET_SCORE
+}
